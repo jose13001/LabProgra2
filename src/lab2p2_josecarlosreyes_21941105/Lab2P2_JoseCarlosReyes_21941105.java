@@ -20,13 +20,19 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
      */
     public static ArrayList<Animales> lista = new ArrayList();
     public static Scanner sc = new Scanner(System.in);
-    public static Animales Registrados = new Animales();
-    
+    public static Animales Registrado1 = new Animales();
+    public static Animales Registrado2 = new Animales();
+    public static Animales Registrado3 = new Animales();
 
 
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        Registrado1 = new Animales("Bos taurus","vaca","campos","herviboro","grande","todos lados",100);
+        Registrado2 = new Animales("Canis lupus familiaris","perro","casa","omnivoro","fiel","todos lados",150);
+        Registrado3 = new Animales("Felis catus","gato","casa","omnivoro","peludos","todos lados",120);
+        lista.add(Registrado1);
+        lista.add(Registrado2);
+        lista.add(Registrado3);
        do{
           opciones(menu());
        }
@@ -56,7 +62,7 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
         else if(opcion == 3)
             eliminardatos();
         else if(opcion == 4)
-            ();
+            lista();
         else if(opcion == 5)
             ();
     }
@@ -139,7 +145,11 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
         System.out.print("Nombre Cientifico: ");
         lista.remove(sc.nextInt());
     }
-    
+    public static void lista(){
+        for(Animales animales : lista){
+            System.out.println(animales.toString());
+        }
+    }
 
 
 
