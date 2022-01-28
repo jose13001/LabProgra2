@@ -64,7 +64,7 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
         else if(opcion == 4)
             lista();
         else if(opcion == 5)
-            ();
+            alimentar();
     }
     
     public static void registrar(){
@@ -149,6 +149,9 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
         for(Animales animales : lista){
             System.out.println(animales.toString());
         }
+    }
+    public static void alimentar(){
+        
     }
 
 
