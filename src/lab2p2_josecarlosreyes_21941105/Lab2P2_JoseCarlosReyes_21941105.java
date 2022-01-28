@@ -26,6 +26,7 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        
        do{
           opciones(menu());
        }
