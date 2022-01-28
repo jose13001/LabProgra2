@@ -51,9 +51,9 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
         else if(opcion == 1)
             registrar();
         else if(opcion == 2)
-            ();
+            editar();
         else if(opcion == 3)
-            ();
+            eliminardatos();
         else if(opcion == 4)
             ();
         else if(opcion == 5)
@@ -78,5 +78,69 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
         lista.add(new Animales(Nombrecientifico, NombreComun, habitat, alimentacion, rasgos,
         distribucion, vida));
     }
+    
+    public static void editar(){
+        System.out.print("Ingrese Nombre Cientifico: ");
+        int nombrec = sc.nextInt();
+        System.out.println("1. Un atributo");
+        System.out.println("2. Todos los atributos");
+        System.out.print("Ingrese la opcion: ");
+        int opcion = sc.nextInt();
+        if(opcion == 1)
+            editarUnAtributo(nombrec);
+        else if(opcion == 2)
+            editarAtributos(nombrec);
+    }
+    public static void editarUnAtributo(int nombrec){
+        System.out.println("1. Nombre comun");
+        System.out.println("2. Habitat");
+        System.out.println("3. Alimentacion");
+        System.out.println("4. Rasgos");
+        System.out.println("5. Distribucion geografica");
+        System.out.println("6. Vida");
+        System.out.print("Ingrese la opcion: ");
+        int opcion = sc.nextInt();
+        if(opcion == 1){
+            System.out.print("Nombre comun: ");
+            lista.get(nombrec).setNombreComun(sc.next());
+        }else if(opcion == 2){
+            System.out.print("Habitat: ");
+            lista.get(nombrec).setHabitat(sc.next());
+        }else if(opcion == 3){
+            System.out.print("Alimentacion: ");
+            lista.get(nombrec).setAlimentacion(sc.next());
+        }else if(opcion == 4){
+            System.out.println("Rasgos: ");
+            lista.get(nombrec).setRasgos(sc.next());
+        }else if(opcion == 5){
+            System.out.print("Distribucion geografica: ");
+            lista.get(nombrec).setDistribucion(sc.next());
+        }else if(opcion == 6){
+            System.out.print("Vida: ");
+            lista.get(nombrec).setVida(sc.nextInt());
+        }
+    }
+    public static void editarAtributos(int nombrec){
+        System.out.print("Nombre comun: ");
+        lista.get(nombrec).setNombreComun(sc.next());
+        System.out.print("Habitat: ");
+        lista.get(nombrec).setHabitat(sc.next());
+        System.out.print("Alimentacion: ");
+            lista.get(nombrec).setAlimentacion(sc.next());
+       System.out.println("Rasgos: ");
+            lista.get(nombrec).setRasgos(sc.next());
+        System.out.print("Distribucion geografica: ");
+            lista.get(nombrec).setDistribucion(sc.next());
+        System.out.print("Vida: ");
+            lista.get(nombrec).setVida(sc.nextInt());       
+    }
+    public static void eliminardatos(){
+        System.out.print("Nombre Cientifico: ");
+        lista.remove(sc.nextInt());
+    }
+    
+
+
+
     
 }
