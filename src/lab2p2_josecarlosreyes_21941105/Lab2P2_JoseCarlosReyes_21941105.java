@@ -27,7 +27,7 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
     public static void main(String[] args) {
         // TODO code application logic here
        do{
-           menu();
+          opciones(menu());
        }
        while (true);
         
@@ -43,7 +43,40 @@ public class Lab2P2_JoseCarlosReyes_21941105 {
                             "5. Alimentar animal\n" +                           
                             "Ingrese la opcion: ");
         return sc.nextInt();
-
+    }
+    
+    public static void opciones(int opcion){
+        if(opcion == 0)
+            System.exit(0);
+        else if(opcion == 1)
+            registrar();
+        else if(opcion == 2)
+            ();
+        else if(opcion == 3)
+            ();
+        else if(opcion == 4)
+            ();
+        else if(opcion == 5)
+            ();
+    }
+    
+    public static void registrar(){
+        System.out.print("Nombre Cientifico: ");
+        String Nombrecientifico = sc.nextLine();
+        System.out.print("Nombre Comun: ");
+        String NombreComun = sc.nextLine();
+        System.out.print("Habitat: ");
+        String habitat = sc.nextLine();
+        System.out.print("Alimentacion: ");
+        String alimentacion = sc.nextLine();
+        System.out.print("Rasgos: ");
+        String rasgos = sc.nextLine();
+        System.out.print("Distribucion Geografica: ");
+        String distribucion = sc.nextLine();
+        System.out.print("Vida: ");
+        int vida = sc.nextInt();
+        lista.add(new Animales(Nombrecientifico, NombreComun, habitat, alimentacion, rasgos,
+        distribucion, vida));
     }
     
 }
