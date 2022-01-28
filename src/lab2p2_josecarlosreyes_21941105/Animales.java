@@ -35,34 +35,63 @@ public class Animales {
         return Nombrecientifico;
     }
 
+    public void setNombrecientifico(String Nombrecientifico) {
+        this.Nombrecientifico = Nombrecientifico;
+    }
+
     public String getNombreComun() {
         return NombreComun;
+    }
+
+    public void setNombreComun(String NombreComun) {
+        this.NombreComun = NombreComun;
     }
 
     public String getHabitat() {
         return habitat;
     }
 
+    public void setHabitat(String habitat) {
+        this.habitat = habitat;
+    }
+
     public String getAlimentacion() {
         return alimentacion;
+    }
+
+    public void setAlimentacion(String alimentacion) {
+        this.alimentacion = alimentacion;
     }
 
     public String getRasgos() {
         return rasgos;
     }
 
+    public void setRasgos(String rasgos) {
+        this.rasgos = rasgos;
+    }
+
     public String getDistribucion() {
         return distribucion;
+    }
+
+    public void setDistribucion(String distribucion) {
+        this.distribucion = distribucion;
     }
 
     public int getVida() {
         return vida;
     }
 
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
     @Override
     public String toString() {
         return "Animales{" + "Nombrecientifico=" + Nombrecientifico + ", NombreComun=" + NombreComun + ", habitat=" + habitat + ", alimentacion=" + alimentacion + ", rasgos=" + rasgos + ", distribucion=" + distribucion + ", vida=" + vida + '}';
     }
+
     
     
 }
